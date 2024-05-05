@@ -1,18 +1,17 @@
 # to make it a CRON:
 
 Save the script and make it executable:
-bash
-Copy code
-''bash
+
+```bash
 chmod +x file_cleanup.sh
-''
+```
 
 Set up a cron job:
 Run crontab -e to edit your user's crontab, and add the following lines:
 
-bash
-Copy code
+```bash
 0 0 * * 0 /path/to/file_cleanup.sh
+```
 This cron job will execute the file_cleanup.sh script every Sunday at midnight (0 minutes past midnight, 0 hours, on Sunday).
 
 Remember to replace /path/to/file_cleanup.sh with the actual path to your script file.
